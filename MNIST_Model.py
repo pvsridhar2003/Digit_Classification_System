@@ -12,20 +12,13 @@ import matplotlib.image as mpimg
 from sklearn.model_selection import train_test_split
 # model performance metrics
 from sklearn.metrics import confusion_matrix, classification_report
-#tensorflow
+# tensorflow for keras
 import tensorflow as tf
-
-# utility functions
-#from tensorflow.python.keras.utils.np_utils import to_categorical
-# sequential model
-#from tensorflow.python.keras.models import Sequential
-# layers
-#from tensorflow.python.keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout
 
 
 # import train and test dataset
-train = pd.read_csv("C:/Users/pvsri/OneDrive/Documents/Code/Data Analysis/MNIST/train.csv")
-test = pd.read_csv("C:/Users/pvsri/OneDrive/Documents/Code/Data Analysis/MNIST/test.csv")
+train = pd.read_csv("./train.csv")
+test = pd.read_csv("./test.csv")
 
 
 # split into image and labels and convert to numpy array
